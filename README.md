@@ -2,5 +2,4 @@
 server restapi create in go with fiber library by GabrielHDZ.
 
 
-init with ada
-..
+init server with ada
