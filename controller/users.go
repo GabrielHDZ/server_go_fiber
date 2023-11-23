@@ -11,8 +11,8 @@ type User struct {
 
 func HandleUser(c *fiber.Ctx) error {
 	user := User{
-		Fisrtname: "Coca",
-		Lasname:   "COla",
+		Fisrtname: "Jake",
+		Lasname:   "Sullyvan",
 	}
 	return c.Status(fiber.StatusOK).JSON(user)
 }
