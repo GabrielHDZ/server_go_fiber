@@ -13,6 +13,7 @@ func HandleUser(c *fiber.Ctx) error {
 	user := User{
 		Fisrtname: "Jake",
 		Lasname:   "Sullyvan",
+		Age:23,
 	}
 	return c.Status(fiber.StatusOK).JSON(user)
 }
