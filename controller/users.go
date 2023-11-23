@@ -7,6 +7,7 @@ import (
 type User struct {
 	Fisrtname string
 	Lasname   string
+	Age int32
 }
 
 func HandleUser(c *fiber.Ctx) error {
