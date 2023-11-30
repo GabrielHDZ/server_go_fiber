@@ -9,12 +9,14 @@ import (
 
 func main() {
 	app := fiber.New()
-
 	//Middleware
 	app.Use(logger.New())
 
 	app.Get("/", func(c *fiber.Ctx) error {
 		return c.SendString("Hello, World!")
+	})
+	app.Get("users",func(res *fiber.Ctx)error{
+		return c.SendString("route users")
 	})
 
 	//aplicate middleware headerId only the group
