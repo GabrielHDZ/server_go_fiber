@@ -10,13 +10,13 @@ type User struct {
 	Age int32
 }
 
-func HandleUser(c *fiber.Ctx) error {
+func HandleUser(res *fiber.Ctx) error {
 	user := User{
 		Fisrtname: "Jake",
 		Lasname:   "Sullyvan",
 		Age:23,
 	}
-	return c.Status(fiber.StatusOK).JSON(user)
+	return res.Status(fiber.StatusOK).JSON(user)
 }
 
 func HandleReciveUser(c *fiber.Ctx) error {
