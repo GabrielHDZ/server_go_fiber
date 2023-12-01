@@ -12,7 +12,6 @@ func main() {
 	//Middleware
 	app.Use(logger.New())
 
-	
 	app.Get("/", func(c *fiber.Ctx) error {
 		return c.SendString("Hello, World!")
 	})
